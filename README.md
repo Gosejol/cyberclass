@@ -1,2 +1,3 @@
 # cyberclass
-Linux and Ansible scripts from my cyberclass
+On this repository we will provision a server with an ELK-stack docker container to monitor a virtual network hosted in Azure. This project builds on an virtual Azure infrastructure containing a gateway Jump-Box used to provision  three servers  with DVWA to practice pentesting. To ensure availability and maximize azure uptime (%99.95 to %99.99)  the servers were placed in two availability zones and made accessible to the web through a zone redundant load balancer. During the project we will create a virtual network on a different region and under the resource group containing our azure  infrastructure. A peer-to-peer connection will allow access between our 2 existing networks. Finally we will install Filebeat and Metricbeat and use Kibana to visualize charts and graphs containing logs of our DVWA servers.
+
