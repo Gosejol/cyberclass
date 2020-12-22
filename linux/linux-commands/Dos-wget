@@ -1,0 +1,37 @@
+The fpllowing commands use 'wget' to create web requests
+with the intention to mimic a Dos attack. Using wget will
+create files on your Jump-Box, use -O /dev/null to avoid.
+
+from your Jump-Box :
+
+with "for" loop.
+
+Run : for i in {1..1000}; do wget 10.0.0.7 -O /dev/null; done
+
+it will create 1000 web requests, files will be sent to /dev/null. 
+
+
+with "while" loop.
+
+Run : while true; do wget 10.0.0.7 -O /dev/null; done
+
+it will create web requests.
+
+the "true" loop will never stop, press ctrl + c to quit.
+
+
+the following command will create web requests on all 3 vm's.
+
+with nested loop.
+
+use when vm's ip's are in sequence.
+                   
+Run : while true; do for i in {4..6}; do wget -O /dev/null 10.0.0.$i; done; done
+
+use when vm's ip's are not in sequence and need to be listed explicitly.
+
+Run : while true; do for i in 7 9 10; do wget -O /dev/null 10.0.0.$i; done; done
+
+the "true" loop will never stop, press ctrl + c to quit. 
+
+

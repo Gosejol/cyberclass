@@ -1,0 +1,9 @@
+From your ansible container within your Jump-Box,
+ssh to your VM and run the following commands.
+
+run " sudo apt install stress " -- for instalation
+run " sudo stress --cpu 1 " -- to run the test.
+
+run the test on all of your vm's.
+the results should be visible on kibana-metricbeat.
+to quit the stress program press " ctrl + c "

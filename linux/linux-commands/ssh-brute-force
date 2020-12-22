@@ -1,0 +1,35 @@
+The fpllowing commands will create failed SSH login
+when run from an unauthorized enviroment that does not
+contain the ssh keys.
+
+from your Jump-Box :
+
+with "for" loop.
+
+Run : for i in {1..1000}; do ssh sysadmin@10.0.0.7; done
+
+it will create 1000 failed loggin to the targeted ip address. 
+
+
+with "while" loop.
+
+Run : while true; do ssh sysadmin@10.0.0.5; done 
+
+the "true" loop will never stop, press ctrl + c to quit.
+
+
+the following command will create ssh login on all 3 vm's.
+
+with nested loop.
+
+use when vm's ip's are in sequence.
+                   
+Run : while true; do for i in {5..7}; do ssh sysadmin@10.0.0.$i; done; done
+
+use when vm's ip's are not in sequence and need to list explicitly.
+
+Run : while true; do for i in 7 9 12; do ssh sysadmin@10.0.0.$i; done; done
+
+the "true" loop will never stop, press ctrl + c to quit. 
+
+
