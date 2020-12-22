@@ -35,10 +35,11 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
+| Jump Box | Gateway  | 10.0.0.4   | Linux            |
 | DVWA-VM1 | DVWA     | 10.0.0.9   | Linux            |
 | DVWA-VM2 | DVWA     | 10.0.0.10  | Linux            |
 | DVWA-VM3 | DVWA     | 10.0.0.7   | Linux            |
+| ELK Server | ELK stack | 10.1.0.5  | Linux            | 
 
 ### Access Policies
 
@@ -55,7 +56,7 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | No                  | home office ip    |  
-| ELK server|                     |home office ip                      |
+| ELK server| No                    |home office ip 10.0.0.4 10.0.0.7 10.0.0.9 10.0.0.10 |
 |          |                     |                      |
 
 ### Elk Configuration
