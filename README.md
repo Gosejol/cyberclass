@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-**Note**: The following image link needs to be updated. Replace `Azure-vNet` with the name of your diagram image file.
+`Azure-vNet.jpg` 
 
 ![](diagrams/Azure-vNet.jpg)
 
