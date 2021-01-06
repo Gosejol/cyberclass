@@ -51,7 +51,7 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes                 | home office ip    |  
-| ELK server| Yes                |10.0.0.4 10.0.0.7 10.0.0.9 10.0.0.10 |
+| ELK server| No                |10.0.0.4 10.0.0.7 10.0.0.9 10.0.0.10 |
 | DVWA-VM1 |  No                 | 10.0.0.4  10.1.0.5                   |
 | DVWA-VM2 |  No                 | 10.0.0.4  10.1.0.5                   |
 |DVWA-VM3  |  No                 | 10.0.0.4  10.1.0.5                   |  
