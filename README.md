@@ -6,9 +6,9 @@ The files in this repository were used to configure the network depicted below.
 
 ![](diagrams/Azure-vNet.jpg)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible directory may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _[link to ansible directory!](ansible)_
+  - _[link to YAML files!](ansible)_
 
 This document contains the following details:
 - Description of the Topology
@@ -50,11 +50,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                  | home office ip    |  
-| ELK server| Yes                    |home office ip 10.0.0.4 10.0.0.7 10.0.0.9 10.0.0.10 |
-| DVWA-VM1 |  No                 | 10.0.0.4                     |
-| DVWA-VM2 |  No                 | 10.0.0.4                     |
-|DVWA-VM3  |  No                 | 10.0.0.4                     |  
+| Jump Box | Yes                 | home office ip    |  
+| ELK server| Yes                |10.0.0.4 10.0.0.7 10.0.0.9 10.0.0.10 |
+| DVWA-VM1 |  No                 | 10.0.0.4  10.1.0.5                   |
+| DVWA-VM2 |  No                 | 10.0.0.4  10.1.0.5                   |
+|DVWA-VM3  |  No                 | 10.0.0.4  10.1.0.5                   |  
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
