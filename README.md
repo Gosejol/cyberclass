@@ -87,8 +87,8 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
-![](ansible/Images/DockerPS.png)
-- Copy the 'ELk.yml' file to the 'roles' directory in the ansible node.
+![](ansible/Images/ansiblenode.png)
+- Copy the 'ELk.yml' file to the 'roles' directory in the ansible control node.
 - Update the 'hosts' file to include the internal ip adress of the target virtual machine.
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
