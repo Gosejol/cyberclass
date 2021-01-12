@@ -127,5 +127,5 @@ To update the ansible hosts file add the name of the group [elkserver] and the i
 To deploy the elk-playbook.yml:
 
 ```
-RUN: `sudo ansible-playbook elk-playbook.yml` while on the `roles` directory.
+RUN:  sudo ansible-playbook elk-playbook.yml  while on the roles directory.
 ```
