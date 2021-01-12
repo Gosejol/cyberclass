@@ -67,7 +67,7 @@ The playbook implements the following tasks:
 - following, the YAML file installs python3-pip.
 - next installation of a docker python module: docker.
 - expansion of memory by 262144 using vm.max_map_count.
-- finally, dounloads and install the image of the ELK container:sebp/elk:761  and publishing ports.
+- finally, downloads and install the image of the ELK container: sebp/elk:761 and publish ports.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
