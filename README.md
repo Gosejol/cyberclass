@@ -103,8 +103,11 @@ curl https://raw.githubusercontent.com/Gosejol/cyberclass/main/ansible/ELK/elk-p
 ```
 
 To update the ansible configuration file add the server user name to the remote_user and uncoment:
-```
 
+```
+# default user to use for playbooks if user is not specified
+# (/usr/bin/ansible will use current user as default)
+remote_user = spartina
 ```
 
 To update the ansible hosts file add the name of the group [elkserver] and the ip adresses of the targeted machines.
@@ -119,4 +122,5 @@ To update the ansible hosts file add the name of the group [elkserver] and the i
 [elkservers]
 10.1.0.5 ansible_python_interpreter=/usr/bin/python3
 ```
-
+To deploy the elk-playbook.yml:
+RUN: `sudo ansible-playbook elk-playbook.yml` while on the `roles` directory
