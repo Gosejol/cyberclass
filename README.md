@@ -67,7 +67,7 @@ The playbook implements the following tasks:
 - following, the YAML file installs python3-pip.
 - next installation of a docker python module: docker.
 - expansion of memory by 262144 using vm.max_map_count.
-- finally, downloads and install the image of the ELK container: sebp/elk:761 and publish ports.
+- finally, downloads and install the image of the ELK container: sebp/elk:761 and published ports.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -98,7 +98,7 @@ SSH into the control node and follow the steps below:
 
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-_curl https://raw.githubusercontent.com/Gosejol/cyberclass/main/ansible/ELK/elk-playbook.yml?token=AQORTIXPSWR5GEUULMYLXUS77USYA > /etc/ansible/files/filebeat-config.yml
+_curl https://raw.githubusercontent.com/Gosejol/cyberclass/main/ansible/ELK/elk-playbook.yml?token=AQORTIXPSWR5GEUULMYLXUS77USYA > /etc/ansible/roles/elk-playbook.yml
 
 
 
