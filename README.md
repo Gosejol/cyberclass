@@ -98,17 +98,17 @@ SSH into the control node and follow the steps below:
 
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-`curl https://raw.githubusercontent.com/Gosejol/cyberclass/main/ansible/ELK/elk-playbook.yml?token=AQORTIXPSWR5GEUULMYLXUS77USYA 
+_`curl https://raw.githubusercontent.com/Gosejol/cyberclass/main/ansible/ELK/elk-playbook.yml?token=AQORTIXPSWR5GEUULMYLXUS77USYA 
 > /etc/ansible/roles/elk-playbook.yml`
 
-`[webservers]`
-`10.0.0.4 ansible_python_interpreter=/usr/bin/python3`
-`10.0.0.5 ansible_python_interpreter=/usr/bin/python3`
-`10.0.0.6 ansible_python_interpreter=/usr/bin/python3`
+_[webservers]
+_10.0.0.4 ansible_python_interpreter=/usr/bin/python3`
+_10.0.0.5 ansible_python_interpreter=/usr/bin/python3`
+_10.0.0.6 ansible_python_interpreter=/usr/bin/python3`
 
-`List the IP address of your ELK server`
-`There should only be one IP address`
-`[elkservers]`
-`10.1.0.4 ansible_python_interpreter=/usr/bin/python3`
+_List the IP address of your ELK server
+_There should only be one IP address
+_[elkservers]
+_10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 
 
