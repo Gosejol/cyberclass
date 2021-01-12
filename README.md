@@ -58,28 +58,29 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _Consistency: ansible allows for uniformity on provisioned scripts, leading to susscesfull installation of curated YAML files. _ 
-- _Scalability: ansible provides an enviroment on which one server or multiple servers can be provisioned at the same time. _
-- _Redundancy: ansible helps prevent web-application's down-time by allowing the replacement of one or more compromised servers without interrupting service. _ 
+- Consistency: ansible allows for uniformity on provisioned scripts, leading to susscesfull installation of curated YAML files.  
+- Scalability: ansible provides an enviroment on which one server or multiple servers can be provisioned at the same time.
+- Redundancy: ansible helps prevent web-application's down-time by allowing the replacement of one or more compromised servers without interrupting service.  
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
-
+- .
+- .
+- .
+- .
+- .
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![](ansible/Images/DockerPS.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _10.0.0.7_
-- _10.0.0.9_
-- _10.0.0.10_
+- 10.0.0.7
+- 10.0.0.9
+- 10.0.0.10
 
 We have installed the following Beats on these machines:
-- _Filebeat_
-- _Metricbeat_
+- Filebeat
+- Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
@@ -90,7 +91,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 
 ![](ansible/Images/ansiblenode.png)
-- Copy the `ELk-playbook.yml` file to the `roles` directory in the ansible control node.
+- Copy the `elk-playbook.yml` file to the `roles` directory in the ansible control node.
 - Update the `hosts` file to include the `[group-name]` that includes the internal ip adresses of the targeted virtual machines.
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
