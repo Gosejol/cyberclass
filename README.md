@@ -84,7 +84,9 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat allows harversting changes in log files and provides input to Logstash, one of the files that Filebeat monitors is `syslog input`  read events over TCP, UDP, or a Unix stream socket ._
+- Filebeat allows harversting changes in log files and provides input to Logstash, one of the files that Filebeat monitors is `syslog input`  
+were it reads events over TCP,UDP,or a Unix stream socket.  Metricbeat takes the system metrics and statistics that it collects and output them, to Logstash.
+On both cases, the logs collected are sent to logstash for parcing, from lostash the logs are sent to elasticsearch for indexing and lastly to kibana for visualisation. 
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -123,4 +125,7 @@ To update the ansible hosts file add the name of the group [elkserver] and the i
 10.1.0.5 ansible_python_interpreter=/usr/bin/python3
 ```
 To deploy the elk-playbook.yml:
-RUN: `sudo ansible-playbook elk-playbook.yml` while on the `roles` directory
+
+```
+RUN: `sudo ansible-playbook elk-playbook.yml` while on the `roles` directory.
+```
