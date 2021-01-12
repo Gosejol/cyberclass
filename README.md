@@ -58,9 +58,9 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _Ansible ensures uniformity on all provisioned scripts, leading to susscesfull instalation of curated YAML files. Furthermore, ansible 
--provides ample oportunities for scalability, as it allows for a streamline deployment of applications to multiple servers at the same time.
-redundancy.  _
+- _Consistency: ansible allows for uniformity on provisioned scripts, leading to susscesfull installation of curated YAML files. _ 
+- _Scalability: ansible provides an enviroment on which one server or multiple servers can be provisioned at the same time. _
+- _Redundancy: ansible helps prevent web-application's down-time by allowing the replacement of one or more compromised servers without interrupting service. _ 
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
@@ -90,14 +90,10 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 
 ![](ansible/Images/ansiblenode.png)
-- Copy the `ELk.yml` file to the `roles` directory in the ansible control node.
-- Update the `hosts` file to include the internal ip adresses of the targeted virtual machines.
+- Copy the `ELk-playbook.yml` file to the `roles` directory in the ansible control node.
+- Update the `hosts` file to include the `[group-name]` that includes the internal ip adresses of the targeted virtual machines.
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 _curl https://raw.githubusercontent.com/Gosejol/cyberclass/main/ansible/ELK/elk-playbook.yml?token=AQORTIXPSWR5GEUULMYLXUS77USYA > /etc/ansible/files/filebeat-config.yml
