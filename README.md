@@ -96,11 +96,18 @@ SSH into the control node and follow the steps below:
 - Update the `hosts` file to include the `[group-name]` that includes the internal ip adresses of the targeted virtual machines.
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
+To download the elk-playbook run :
 ```
 curl https://raw.githubusercontent.com/Gosejol/cyberclass/main/ansible/ELK/elk-playbook.yml?token=AQORTIXPSWR5GEUULMYLXUS77USYA 
 > /etc/ansible/roles/elk-playbook.yml
 ```
 
+To update the ansible configuration file add the server user name to the remote_user and uncoment:
+```
+
+```
+
+To update the ansible hosts file add the name of the group [elkserver] and the ip adresses of the targeted machines.
 ```
 [spartina]
 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
