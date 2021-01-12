@@ -63,11 +63,12 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - Redundancy: ansible helps prevent web-application's down-time by allowing the replacement of one or more compromised servers without interrupting service.  
 
 The playbook implements the following tasks:
-- .
-- .
-- .
-- .
-- .
+- The playbook instructs to look for the [elkservers] group and targeted ip addresses and install an instance of docker.io.
+- following, the YAML file installs python3-pip.
+- next installation of a docker python module: docker.
+- expansion of memory by 262144 using vm.max_map_count.
+- finally, dounloads and install the image of the ELK container:sebp/elk:761  and publishing ports.
+
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![](ansible/Images/DockerPS.png)
@@ -83,7 +84,7 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Filebeat allows harversting changes in log files and provides input to Logstash, one of the files that Filebeat monitors is `syslog input`  read events over TCP, UDP, or a Unix stream socket ._
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
