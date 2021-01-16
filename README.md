@@ -1,4 +1,5 @@
-## Automated ELK Stack Deployment
+## cloud-based Docker/Ansible ELK Stack Deployment
+ 
 
 The files in this repository were used to configure the network depicted below.
 
@@ -59,7 +60,7 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 - Consistency: ansible allows for uniformity on provisioned scripts, leading to susscesfull installation of curated YAML files.  
-- Scalability: ansible provides an enviroment on which one server or multiple servers can be provisioned at the same time.
+- Scalability: ansible provides an enviroment on which one server or multiple servers can be provisioned at once.
 - Redundancy: ansible helps prevent web-application's down-time by allowing the replacement of one or more compromised servers without interrupting service.  
 
 The playbook implements the following tasks:
@@ -84,9 +85,9 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat allows harversting changes in log files and provides input to Logstash, one of the files that Filebeat monitors is `syslog input`  
-were it reads events over TCP,UDP,or a Unix stream socket.  Metricbeat takes the system metrics and statistics that it collects and output them, to Logstash.
-On both cases, the logs collected are sent to logstash for parcing, from lostash the logs are sent to elasticsearch for indexing and lastly to kibana for visualisation. 
+- Filebeat allows harversting changes in log files, one of the files that Filebeat monitors is `syslog input`  
+were it reads events over TCP,UDP,or a Unix stream socket.  Metricbeat measures system metrics including : cpu-usage, memory and task-manager like statistics.
+On both cases, the logs collected are sent to logstash for were they are filtered and by priorities, from lostash the logs are sent to elasticsearch for indexing and lastly to kibana for visualisation. 
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
