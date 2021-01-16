@@ -100,7 +100,7 @@ SSH into the control node and follow the steps below:
 
 To download the elk-playbook run :
 ```
-curl https://raw.githubusercontent.com/Gosejol/cyberclass/main/ansible/ELK/elk-playbook.yml?token=AQORTIXPSWR5GEUULMYLXUS77USYA 
+curl https://raw.githubusercontent.com/Gosejol/cyberclass/main/ansible/ELK/elk-playbook.yml 
 > /etc/ansible/roles/elk-playbook.yml
 ```
 
