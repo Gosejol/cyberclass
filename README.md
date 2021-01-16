@@ -1,4 +1,4 @@
-## cloud-based Docker/Ansible ELK Stack Deployment
+## Cloud-Based Docker/Ansible ELK Stack Deployment
  
 
 The files in this repository were used to configure the network depicted below.
@@ -86,8 +86,7 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat allows harversting changes in log files, one of the files that Filebeat monitors is `syslog input`  
-were it reads events over TCP,UDP,or a Unix stream socket.  Metricbeat measures system metrics including : cpu-usage, memory and task-manager like statistics.
-On both cases, the logs collected are sent to logstash for were they are filtered and by priorities, from lostash the logs are sent to elasticsearch for indexing and lastly to kibana for visualisation. 
+were it reads events over TCP,UDP,or a Unix stream socket.  Metricbeat measures system metrics including cpu-usage, memory and process statistics.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
